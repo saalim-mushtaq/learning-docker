@@ -61,7 +61,7 @@
 `sudo docker run -it --name containername2 --privileged=true --volumes from containername1`
 
 ## Remove all unused local volumes
-~sudo docker volume prune~
+`~sudo docker volume prune~`
 
 ## to push dockerimage to dockerhub
 `sudo docker push dockerid/imagename`
@@ -76,7 +76,7 @@
 `sudo docker rm $(docker ps -a -q)`
 
 ## to delete all images
-`sudo docker rm -f $(docker images -q
+`sudo docker rm -f $(docker images -q`
 
 
 ## Commands used inside a Dockerfile
@@ -92,7 +92,7 @@
 `to set working directory for a container`
 
 ## COPY 
-`copy files from a local sytem,we need to provide source and destination.
+`copy files from a local sytem,we need to provide source and destination`
 
 ## ADD
 `similar to copy but it provides a feature to download files from internet`
