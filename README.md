@@ -1,7 +1,10 @@
 ## Learning-docker
 
+## to check docker version
+`docker -v`
+
 ## shows all images
-`docker images`
+`sudo docker images`
 
 ## docker image name syntax
 `saalimmushtaq/gcc-4.9:1`
@@ -9,56 +12,71 @@
 
 
 ## to start
-`service docker start`
+`sudo service docker start`
 
 ## to see running containers
-`docker ps`
+`sudo docker ps`
 
 ## to find out images in docker hub
-`docker serach imagename`
+`sudo docker serach imagename`
 
 ## to see running and stopped containers
-`docker ps -a`
+`sudo docker ps -a`
 
 ## to download image from dockerhub to local machine
-`docker pull imagename`
+`sudo docker pull imagename`
 
 ## to give name to the container
-`docker run -it --name contname imagename /bin/bash`
+`sudo docker run -it --name contname imagename /bin/bash`
 
 ## to check service is start or not`
-`service docker start`
+`sudo service docker start`
 
 ## to start container
-`docker start containername`
+`sudo docker start containername`
 
 ## to go inside the container
-` docker attach containername` 
+`sudo docker attach containername` 
 
 ## to stop the container
-`docker stop containername`
+`sudo docker stop containername`
 
 ## to delete the container
 `docker rm containername`
 
 ## to create image out of a dockerfile
-`docker build -t myimage .`
+`sudo docker build -t myimage .`
 
 ## to create a container from any image
-`docker run -it --name containername imagename /bin/bash`
+`sudo docker run -it --name containername imagename /bin/bash`
 
 ## to create image from the container
-`docker commit containername imagename`
+`sudo docker commit containername imagename`
 
 
 ## to see which OS you are using on the container
-`cat /etc/os-release`
+`sudo cat /etc/os-release`
 
 ## to share volume with another container
-`docker run -it --name containername2 --privileged=true --volumes from containername1`
+`sudo docker run -it --name containername2 --privileged=true --volumes from containername1`
 
 ## Remove all unused local volumes
-~docker volume prune~
+~sudo docker volume prune~
+
+## to push dockerimage to dockerhub
+`sudo docker push dockerid/imagename`
+
+## to pull dockerimage from dockerhub
+`sudo docker pull dockerid/imagename`
+
+## to stop all running containers
+`sudo docker stop $(docker ps -a -q)`
+
+## to delete all stopped containers 
+`sudo docker rm $(docker ps -a -q)`
+
+## to delete all images
+`sudo docker rm -f $(docker images -q
 
 
 ## Commands used inside a Dockerfile
@@ -83,7 +101,8 @@
 `to expose ports`
 
 ## CMD 
-`execute commands`
+`execute command`
+
 
 ## ENV
 `environment variable`
