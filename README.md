@@ -1,60 +1,68 @@
 ## Learning-docker
 
-## docker images
-`shows all images
+## shows all images
+`docker images`
 
 ## docker image name syntax
-`a/b:1`
-`a represents the name of the repository,b represents the name of the image,1 represents the specific version of the image` 
-
-## docker build
-`creates image from dockerfile`
-
-## service docker start
-`to start`
-
-## docker ps
-`to see running containers`
-
-## docker search imagename
-`to find out images in docker hub`
-
-## docker ps-a
-`to see running and stopped containers`
-
-## docker pull imagename
-`to download image from dockerhub to local machine`
-
-## docker run -it --name contname imagename /bin/bash
-`to give name to the container`
-
-## service docker start
-`to check service is start or not`
-
-## docker start containername
-`to start container`
-
-## docker attach containername
-`to go inside container`
-
-## docker stop containername
-`to stop container`
-
-## docker rm containername
-`to delete container`
-
-## docker build -t imagename .
-`to create image out of a dockerfile`
-
-## docker run -it --name containername imagename /bin/bash
-`to create container from any image`
-
-## docker commit containername imagename
-`to create image from container`
+`saalimmushtaq/gcc-4.9:1`
+`saalimmushtaq the name of the repository,gcc-4.9 is the name of the image,1 is the image tag  
 
 
-## cat /etc/os-release
-`to see which OS you are using on the container`
+## to start
+`service docker start`
+
+## to see running containers
+`docker ps`
+
+## to find out images in docker hub
+`docker serach imagename`
+
+## to see running and stopped containers
+`docker ps -a`
+
+## to download image from dockerhub to local machine
+`docker pull imagename`
+
+## to give name to the container
+`docker run -it --name contname imagename /bin/bash`
+
+## to check service is start or not`
+`service docker start`
+
+## to start container
+`docker start containername`
+
+## to go inside the container
+` docker attach containername` 
+
+## to stop the container
+`docker stop containername`
+
+## to delete the container
+`docker rm containername`
+
+## to create image out of a dockerfile
+`docker build -t myimage .`
+
+## to create a container from any image
+`docker run -it --name containername imagename /bin/bash`
+
+## to create image from the container
+`docker commit containername imagename`
+
+
+## to see which OS you are using on the container
+`cat /etc/os-release`
+
+## to share volume with another container
+`docker run -it --name containername2 --privileged=true --volumes from containername1`
+
+## Remove all unused local volumes
+~docker volume prune~
+
+
+## Commands used inside a Dockerfile
+
 
 ## FROM
 `this image must be on top of the dockerfile`
@@ -80,13 +88,8 @@
 ## ENV
 `environment variable`
 
-## docker run -it --name containername2 --privileged=true --volumes from containername1
-`to share volume with another container`
 
-## docker volume prune
-~Remove all unused local volumes~
 
-##
 
 
 
