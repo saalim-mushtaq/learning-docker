@@ -5,7 +5,7 @@
 
 ## docker image name syntax
 `saalimmushtaq/gcc-4.9:1`
-`saalimmushtaq the name of the repository,gcc-4.9 is the name of the image,1 is the image tag  
+> saalimmushtaq is the name of the repository,gcc-4.9 is the name of the image,1 is the image tag  
 
 
 ## to start
