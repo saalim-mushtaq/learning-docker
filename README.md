@@ -76,7 +76,7 @@
 `sudo docker rm $(docker ps -a -q)`
 
 ## to delete all images
-`sudo docker rm -f $(docker images -q`
+`sudo docker rm -f $(docker images -q)`
 
 
 
