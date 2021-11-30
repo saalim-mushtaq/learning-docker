@@ -79,7 +79,9 @@
 `sudo docker rm -f $(docker images -q`
 
 
-## Commands used inside a Dockerfile
+
+
+## COMMANDS USED INSIDE A DOCKERFILE
 
 
 ## FROM
