@@ -18,7 +18,7 @@
 `sudo docker ps`
 
 ## to find out images in docker hub
-`sudo docker serach imagename`
+`sudo docker search imagename`
 
 ## to see running and stopped containers
 `sudo docker ps -a`
