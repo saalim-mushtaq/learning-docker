@@ -29,7 +29,7 @@
 ## to give name to the container
 `sudo docker run -it --name contname imagename /bin/bash`
 
-## to check service is start or not`
+## to check service is start or not
 `sudo service docker start`
 
 ## to start container
