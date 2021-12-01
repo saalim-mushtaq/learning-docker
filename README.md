@@ -81,7 +81,7 @@
 
 ## to mount a host directory into a docker container
 `sudo docker run -it -v $PWD:$PWD -w $PWD saalimmushtaq/gcc-4.8:2`
-> **-v** flag is used to mount a host folder, **-w** means working directory
+> **-v** flag is used to mount a host folder, **-w** indicates working directory
 
 
 
